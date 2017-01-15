@@ -1,0 +1,16 @@
+<h1>Shopping Cart</h1>
+<table border=1>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Action</th>
+	</tr>
+	<tr ng-repeat="cd1 in data.cart">
+		<td>{{cd1.id}}</td>
+		<td>{{cd1.name}}</td>
+		<td>{{cd1.price}}</td>
+		<td><button ng-click="removeFromCart(cd1.id)">Remove from Cart</button></td>
+	</tr>
+</table>
+<a href="#/shop">Add More Items</a>
